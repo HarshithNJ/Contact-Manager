@@ -1,0 +1,25 @@
+{
+  "contacts": [
+    {
+      "id": "862b",
+      "c_name": "Harshith N J",
+      "email": "njharshith122@gmail.com",
+      "phone": "8217000913",
+      "dob": "2002-04-20"
+    },
+    {
+      "id": "336c",
+      "c_name": "Jagadeesha N S",
+      "email": "gowdajagadeesh1970@gmail.com",
+      "phone": "9880395763",
+      "dob": "1970-06-10"
+    },
+    {
+      "id": "5fc5",
+      "c_name": "Susheela",
+      "email": "susheela2025@gmail.com",
+      "phone": "8618630254",
+      "dob": ""
+    }
+  ]
+}
