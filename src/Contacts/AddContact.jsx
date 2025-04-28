@@ -36,6 +36,7 @@ const AddContact = () => {
         }catch(err){
             console.log("Contact Creation Failed");
             
+            
         }
     }
   return (

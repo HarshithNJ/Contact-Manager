@@ -25,7 +25,9 @@ const ViewContacts = () => {
     <div>
       {
         state == null? (
-            <FadeLoader />
+          <div className="loader-container">
+            <FadeLoader className='fade-loader' />
+          </div>
         ) : (
           state.map((user)=> {
 

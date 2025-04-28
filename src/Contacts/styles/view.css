@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+.loader-container {
+    top: 0;
+    left: 0;
+    width: 100vw; /* full width */
+    height: 80vh; /* full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+
 .view{
     height: 100%;
     width: 98%;
@@ -42,7 +54,7 @@
 
 #sub{
     margin: 5px 20px;
-    width: 30%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;

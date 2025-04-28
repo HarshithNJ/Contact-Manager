@@ -28,8 +28,10 @@ const UpdateContact = () => {
 
     let editData = async ()=> {
 
-        let data = await axios.get(`http://localhost:4001/contacts/${id}`)
+        let {data} = await axios.get(`http://localhost:4001/contacts/${id}`)
+        setContact(data)
     }
+    editData()
   }, [id])
 
   let handleSubmit = async(user)=>{
@@ -53,11 +55,11 @@ return (
       <form action="" onSubmit={handleSubmit}>
           <div>
               <label htmlFor="c_name">Name : </label>
-              <input type="text" name="c_name" id="" required onChange={handleContact}/>
+              <input type="text" name="c_name" id="" value={c_name} required onChange={handleContact}/>
           </div>
           <div>
               <label htmlFor="email">Email : </label>
-              <input type="email" name="email" id="" required onChange={handleContact}/>
+              <input type="email" name="email" id="" value={email} required onChange={handleContact}/>
           </div>
           <div>
               <label htmlFor="phone">Phone Number : </label>
@@ -65,7 +67,7 @@ return (
           </div>
           <div>
               <label htmlFor="dob">Date Of Birth : </label>
-              <input type="date" name="dob" id="" onChange={handleContact}/>
+              <input type="date" name="dob" id="" value={dob} onChange={handleContact}/>
           </div>
 
             <button>UPDATE</button>

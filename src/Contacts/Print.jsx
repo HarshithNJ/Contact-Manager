@@ -2,7 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-const Print = ({c_name, email, phone, id}) => {
+const Print = ({c_name, email, phone, dob, id}) => {
 
     let navigate = useNavigate();
 
@@ -37,6 +37,7 @@ const Print = ({c_name, email, phone, id}) => {
             <div id="sub">
                 <p>{phone}</p>
                 <p>{email}</p>
+                <p>{dob}</p>
             </div>
         </div>
         <div className="btns">
